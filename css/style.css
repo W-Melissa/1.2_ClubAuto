@@ -1,0 +1,302 @@
+/* Polices titres font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+/* Polices corps: font-family: 'Open Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:500,600,700,800,900&display=swap');
+
+/* =============== STYLE GENERAL  =============== */
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+}
+
+h2, h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.accessibility{
+    position: absolute;
+    left: -15000px;
+}
+
+header[class="container-fluid"]{
+    padding: 0;
+}
+/* =============== STYLE HEADER  =============== */
+
+
+/* ===== En infos ===== */
+#en_tete_infos{
+    height: 100px;
+    background-color:#232628;
+    color: #FFFFFF;
+    align-items: center;
+    padding : 0 20px 0 20px;
+}
+
+#en_tete_infos div{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+}
+
+#en_tete_infos a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.infos_orange{
+    color: #CC6119;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+#info_tel{
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 19.2px;
+}
+
+.infos_horaires{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+#reseaux_sociaux img{
+    height: 2.9rem;
+}
+
+header img{
+    height: 2.4rem;    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    h1{
+        font-size: 2.2rem;
+    }
+}
+
+/* ===== Nav ===== */
+
+.navigation{
+    padding: 0 20px 0 0;
+    height: 50px;
+    height: 50px;
+    background-color: #ECEFF3;
+}
+
+.nav-lien{
+    color: #232628;
+    font-weight: 800;
+    font-size: 0.9rem ;
+    height: 100%;
+}
+
+.nav-lien:hover{
+    color: #FFFFFF;
+}
+
+.nav-item:hover{
+    background-color: #CC6119;
+}
+
+/*en_tete_header version mobile*/
+@media screen and (max-width: 991px) {
+    #en_tete_infos{
+        height: 200px;
+    }
+
+    #en_tete_infos div{
+        justify-content: flex-start;
+    }
+    
+    header img{
+        height: 5rem;
+    }
+    #info_tel{
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
+    .infos_orange{
+        font-size: 1.5rem;
+        font-weight: bold;
+    } 
+
+    /*Navigation mobile*/
+    .nav-lien{
+        font-size: 1.5rem ;
+    }
+    
+    #btnNavMobile{
+        color: #6C98E1;
+        background-color: #232628;
+    }
+
+    #navMobile{
+        background-color: #232628;
+        height: 80px;
+    }
+    
+    .navDesktop{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 991px){
+    #menuNavMobile{
+        display: none;
+    }
+}
+
+/* =============== STYLE FOOTER  =============== */
+footer {
+    background-color:#232628;
+    color: #989999;
+    font-size: 0.9rem;
+}
+
+#infos_footer{
+    height: auto;
+    padding: 80px;
+    margin: 20px;
+}
+
+footer h2{
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+footer hr{
+    margin: 0 100px 0 100px;
+}
+
+/* ===== Club auto ===== */
+footer span{
+    color:#6C98E1 ;
+}
+
+
+/* ===== Horaires ===== */
+.footer_horaire{
+    color: #FFFFFF;
+}
+
+.jour_ouverture{
+    color: #989999;
+    font-weight: bold;
+}
+
+/* ===== Newsletter ===== */
+form{
+    height: 40px;
+    display: flex;
+    align-items: stretch;
+}
+#newsletter input{
+    border: none;
+    padding-left: 30px ;
+    width : 100%
+}
+
+#newsletter {
+    align-items: center;
+}
+
+/* ===== Reseaux sociaux ===== */
+
+#footer_reseaux_sociaux img{
+    height: 45px;
+    width: 45px;
+    margin :0 2px 2px 2px;
+}
+
+
+/* ===== Copyright ===== */
+#copyright{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+
+/*Règle la disposition du footer - écran de 992px à 1400px*/
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    #infos_footer{
+        height: auto;
+        padding: 40px 10px 40px 10px;
+        margin:0;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #infos_footer{
+        height: auto;
+        padding: 40px 10px 0px 10px;
+        margin:0;
+    }
+}
+
+/* Retire les logos superflux du footer*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #newsletter img[src="images/rss.png"]{
+        display: none;
+    }
+
+    #footer_reseaux_sociaux img[src="images/logo-google.png"], #footer_reseaux_sociaux img[src="images/logo-youtube.png"]{
+        display: none;
+    }
+}
+
+/*Footer version mobile */
+@media screen and (max-width: 991px){
+    #infos_footer{
+        margin: 0;
+        padding: 30px 0 30px 0;
+        font-size: 2rem;
+    }
+
+    #infos_footer h2{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    #infos_footer p{
+        margin-bottom: 5rem;
+    }
+
+    form{
+        height: 80px;
+        margin : 20px 0 20px 0;
+    }
+
+    form input{
+        padding-left: 30px ;
+        width : 100%
+    }
+
+    #footer_reseaux_sociaux img{
+        height: 100px;
+        width: 100px;
+        margin :0 2px 2px 2px;
+    }
+    #copyright{
+        font-size: 2rem;
+        height: auto;
+        padding : 20px 0 20px 0;
+    }
+}
+
+/* =============== STYLE PAGE ACCUEIL  =============== */
+
+/* ===== Section main presentation ===== */
+#main_presentation{
+    border: 3px black dashed;
+    background-image: url("/images/vehicule1.jpg");
+}
+
+img[src="images/clients.jpg"]{
+    width: 100px;
+ }
+
+
+
