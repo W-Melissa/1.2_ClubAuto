@@ -1,0 +1,216 @@
+/* =============== STYLE PAGE ACCUEIL  =============== */
+
+
+
+/* ===== Section main presentation ===== */
+#section_presentation{
+    background-image: url("/images/vehicule1.jpg");
+    height: 750px;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+#presentation{
+    background-color:#232628;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+ /* ===== Section #articles ===== */
+
+ #articles, #presentation h1{
+     margin: 50px 100px;
+ }
+
+ .txt_article{
+     max-width: 600px;
+ }
+
+ #articles img{
+     margin-bottom: 50px;
+ }
+
+ #articles p{
+    font-size: 0.9rem;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+ul{
+    list-style-type: none;
+    line-height: 30px;
+}
+.orange_check{
+    color: #CC6119;
+    margin-right: 15px;
+}
+
+/* ===== Section #articles ===== */
+#articles2{
+    background-image: url('/images/vente-location.jpg');
+    height: 500px;
+    background-size: cover;
+    padding: 100px;
+}
+
+#txt_louer{
+    background-color: #FAB637;
+}
+
+
+#txt_louer, #txt_vente{
+    background-color: #FAB637;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenu_txt_louer, #contenu_txt_vente{
+    width: 70%;
+    height: auto;
+    color: #FFFFFF;
+}
+
+#txt_vente{
+    background-color:#FF4848 ;   
+}
+
+#articles2 h2{
+    color:#232628 ;
+    font-size: 1.7rem;
+}
+
+#articles2 a{
+    text-decoration: none;
+}
+
+/* ===== Section #vehicules_recents ===== */
+#vehicules_recents hr{
+    color: #CC6119 ;
+    opacity: 1;
+    height: 3px;
+}
+
+#vehicules_recents{
+    background-color:#232628 ;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 50px 100px;
+}
+
+#vehicules_recents h2{
+    text-align: center;
+}
+#vehicules_recents .card{
+    border: none;
+    border-radius: 0%;
+    background-color: rgba(35, 38, 40, 0.8);
+    margin-top: 20px;
+}
+
+#vehicules_recents .card-body{
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 10px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+
+#vehicules_recents .btn{
+    height: 50px;
+    min-width: 100px;
+    background-color: #6C98E1;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 0;
+    margin-left: 20px;
+}
+
+.card-body p{
+    margin: 0;
+}
+
+#ancienPrix{
+    color: #232628;
+    font-weight: normal;
+    font-size: 0.8rem;
+    line-height: 0.7rem;
+    text-decoration: line-through;
+    margin: 0;
+}
+
+/* ===== Section #services ===== */
+#services h2{
+    text-align: center;
+    margin: 50px 0 100px 0;
+}
+#services h3{
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+#services{
+    margin: 0 100px;
+}
+
+.contenu_services{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.contenu_services h3, .contenu_services p{
+    padding-left: 10px;
+}
+
+#services_contact{
+    display: flex;
+    justify-content: center;
+} 
+
+#services_contact a{
+    height: 50px;
+    width: 200px;
+    line-height: 2rem;
+    margin-bottom: 50px;
+}
+
+/* Section vente */
+
+#vente_loca{
+    background-image: url('/images/vehicule3.jpg'); 
+    height: 500px;
+    padding: 80px 100px;
+}
+
+#contenu_vente_loca{
+    background-color: rgba(250, 182, 55, 0.8);
+    width : 600px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenu_vente_loca div{
+    width: 400px;
+    height: 200px;
+    font-size: 0.9rem;
+}
+
+#contenu_vente_loca span{
+    color: #FFFFFF;
+}
+
+#contenu_vente_loca h2{
+    font-size: 2.2rem;
+    line-height: 0.9;
+}

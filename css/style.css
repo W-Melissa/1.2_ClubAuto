@@ -15,6 +15,7 @@ h2, h1{
 
 h1{
     font-size: 2.5rem;
+    color: #FFFFFF;
 }
 
 .accessibility{
@@ -25,6 +26,8 @@ h1{
 header[class="container-fluid"]{
     padding: 0;
 }
+
+
 /* =============== STYLE HEADER  =============== */
 
 
@@ -49,8 +52,11 @@ header[class="container-fluid"]{
 }
 .infos_orange{
     color: #CC6119;
-    font-size: 0.7rem;
     font-weight: bold;
+}
+
+header .infos_orange{
+    font-size: 0.7rem;
 }
 
 #info_tel{
@@ -73,7 +79,7 @@ header img{
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-    h1{
+    #en_tete_infos h1{
         font-size: 2.2rem;
     }
 }
@@ -119,7 +125,7 @@ header img{
         font-size: 3rem;
         line-height: 2.5rem;
     }
-    .infos_orange{
+    #en_tete_infos .infos_orange{
         font-size: 1.5rem;
         font-weight: bold;
     } 
@@ -161,6 +167,7 @@ footer {
     height: auto;
     padding: 80px;
     margin: 20px;
+    margin-top: 0;
 }
 
 footer h2{
@@ -239,11 +246,11 @@ form{
 
 /* Retire les logos superflux du footer*/
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-    #newsletter img[src="images/rss.png"]{
+    #newsletter img[src="/images/rss.png"]{
         display: none;
     }
 
-    #footer_reseaux_sociaux img[src="images/logo-google.png"], #footer_reseaux_sociaux img[src="images/logo-youtube.png"]{
+    #footer_reseaux_sociaux img[src="/images/logo-google.png"], #footer_reseaux_sociaux img[src="/images/logo-youtube.png"]{
         display: none;
     }
 }
@@ -286,17 +293,6 @@ form{
     }
 }
 
-/* =============== STYLE PAGE ACCUEIL  =============== */
-
-/* ===== Section main presentation ===== */
-#main_presentation{
-    border: 3px black dashed;
-    background-image: url("/images/vehicule1.jpg");
-}
-
-img[src="images/clients.jpg"]{
-    width: 100px;
- }
 
 
 

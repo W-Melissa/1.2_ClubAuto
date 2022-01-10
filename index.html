@@ -8,6 +8,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <!-- Intrégration feuille de style -->
 		<link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/accueil.css" />
 		<title>Club Auto</title>
 		<meta name="Club Auto, le meilleur de l'automobile" content="Club Auto, le meilleur de l'automobile est  est une entreprise de vente et de location de véhicule" />
     </head>
@@ -15,7 +16,8 @@
     <body>
         <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de cette page">Accéder au contenu principal de la page</a></p>
         <p class="accessibility"><a href="#menuPrincipal" title="Accéder directement au contenu principal de cette page">Accéder directement au menu principal</a></p>
-    <!--  ============================== Début du header ============================== -->
+
+    <!-- Début de la nav mobile -->
     <div id="menuNavMobile">
         <nav id="navMobile" class="navbar navbar-expand-lg navigation">
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,13 +26,15 @@
         </nav>
         <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a href="index.html" class="nav-link nav-lien" title="Lien vers la page d'ACCUEIL" aria-current="page">ACCUEIL</a></li>
-                <li class="nav-item"><a href="vente.html" class="nav-link nav-lien" title="Lien vers la page VENTE">VENTE</a></li>
-                <li class="nav-item"><a href="location.html" class="nav-link nav-lien" title="Lien vers la page LOCATION">LOCATION</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link nav-lien" title="Lien vers la page CONTACT">CONTACT</a></li>
+                <li class="nav-item"><a href="#" class="nav-link nav-lien" title="Lien vers la page d'ACCUEIL" aria-current="page">ACCUEIL</a></li>
+                <li class="nav-item"><a href="#" class="nav-link nav-lien" title="Lien vers la page VENTE">VENTE</a></li>
+                <li class="nav-item"><a href="#" class="nav-link nav-lien" title="Lien vers la page LOCATION">LOCATION</a></li>
+                <li class="nav-item"><a href="#" class="nav-link nav-lien" title="Lien vers la page CONTACT">CONTACT</a></li>
             </ul>
         </div>
     </div>
+    <!--Fin de la nav mobile -->
+        <!--  ============================== DEBUT HEADER ============================== -->
     <header class="container-fluid">
         <div id="en_tete_infos" class="row">
             <!-- Bloc 1 : Marque -->
@@ -68,28 +72,180 @@
             </div>
         </div>
         
-        <!-- Navigation -->
+        <!-- Navigation desktop -->
         <nav class="navigation navDesktop navbar navbar-expand-lg navbar-light ">
-            <h1 class="accessibility" id="menuPrincipal">Menu principal</h1>
+            <p class="accessibility" id="menuPrincipal">Menu principal</p>
             <div class="container-fluid">
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a href="index.html" class="nav-link nav-lien" title="Lien vers la page d'ACCUEIL" aria-current="page">ACCUEIL</a></li>
-                        <li class="nav-item"><a href="vente.html" class="nav-link nav-lien" title="Lien vers la page VENTE">VENTE</a></li>
-                        <li class="nav-item"><a href="location.html" class="nav-link nav-lien" title="Lien vers la page LOCATION">LOCATION</a></li>
-                        <li class="nav-item"><a href="contact.html" class="nav-link nav-lien" title="Lien vers la page CONTACT">CONTACT</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link nav-lien" title="Lien vers la page d'ACCUEIL" aria-current="page">ACCUEIL</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link nav-lien" title="Lien vers la page VENTE">VENTE</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link nav-lien" title="Lien vers la page LOCATION">LOCATION</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link nav-lien" title="Lien vers la page CONTACT">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <!-- Navigation desktop -->
     </header>
-    <!-- ============================== Fin du header / Début du main ============================== -->
+    <!-- ============================== FIN HEADER / DEBUT MAIN ============================== -->
 
-   
-    <!-- ============================== Fin du main / Début du footer ============================== -->
+    <main id="pageContent" class="containter-fluid">
+        <section id="section_presentation" >
+            <div id="presentation">
+            <h1>CLUB AUTO <span class="infos_orange">LE MEILLEUR DE L'AUTOMOBILE</span></h1>
+        </div>
+        </section>
+        <section id="articles">
+            <div class="row">
+                <div class="col-6">
+                    <img src="images/clients.jpg" alt="Image illustrant des clients" class="img-fluid" width="800px" height="800px"/>
+                </div>
+                <div class="txt_article col-6">
+                    <h2>BIENVENUE CHEZ <span class="infos_orange">CLUB AUTO</span></h2>
+                    <p class="bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ad. Eaque quae qui sapiente, numquam ut omnis autem? Fuga, deleniti.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto hic eius sequi earum odio debitis ab aut? In esse qui, sint delectus vel praesentium odio veritatis magni veniam, quis autem, fuga accusantium provident necessitatibus! Cum dolores sit fugit, similique molestias consectetur minus reprehenderit fuga soluta consequuntur eius amet nobis ipsa voluptate vero. Nihil provident omnis architecto. Dolores neque quibusdam nihil. Neque ex tenetur saepe tempora voluptas praesentium, corporis nisi. Nostrum quae rerum ea voluptatum obcaecati nesciunt cumque in, eaque nisi! Adipisci aut ipsum omnis dolorum nisi officia? Assumenda enim voluptates animi magnam praesentium error exercitationem! Laborum, dolorem? Quae, incidunt.</p>
+                </div>
+                <div class="txt_article col-6">
+                    <h2>LE MEILLEUR DE L'AUTOMOBILE</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto hic eius sequi earum odio debitis ab aut? In esse qui, sint delectus vel praesentium odio veritatis magni veniam, quis autem, fuga accusantium provident necessitatibus! Cum dolores sit fugit, similique molestias consectetur minus reprehenderit fuga soluta consequuntur eius amet nobis ipsa voluptate vero. Nihil provident omnis architecto. .</p>
+                    <ul>
+                        <li><svg class="orange_check" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="10px" height="10px"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>Lorem ipsum dolor sit amet.</li>
+                        <li><svg class="orange_check" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="10px" height="10px"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>Lorem ipsum dolor sit amet.</li>
+                        <li><svg class="orange_check" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="10px" height="10px"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>Lorem ipsum dolor sit amet.</li>
+                        <li><svg class="orange_check" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="10px" height="10px"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>Lorem ipsum dolor sit amet.</li>
+                        <li><svg class="orange_check" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="10px" height="10px"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <img src="images/entretien.jpg" alt="Image illustrant des clients" class="img-fluid" width="800px" height="800px"/>
+                </div>               
+            </div>
+        </section>
+        <section id="articles2">
+            <div class="row">
+                <div class="col-6">
+                    <div id="txt_louer">
+                        <div id="contenu_txt_louer">
+                        <a href="location.html" title="Lien vers la page LOCATION"><h2>Vous souhaitez louer ?</h2></a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos quas, voluptas mollitia dolores minima harum fuga dolorem neque ducimus praesentium nobis obcaecati commodi sequi modi ipsam tempore</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div id="txt_vente">
+                        <div id="contenu_txt_vente">
+                            <a href="vente.html" title="Lien vers la page VENTE"><h2>Vous souhaitez acheter ?</h2></a>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus saepe tenetur suscipit fugit? Velit molestiae ea deserunt rem repellat? Illum quod ad sequi laborum unde ipsa expedita, minima veniam </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="vehicules_recents">
+            <h2>VEHICULES RECENTS</h2>
+            <hr>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="images/vehicule2.jpg" class="card-img-top img-fluid" alt="Image illustrant le véhicule en vente">
+                        <div class="card-body">
+                            <p>BMW 5351, NAVI, LEATHER, ABS</p>
+                            <a class="btn" href="vente.html" role="button" title="Lien vers la page du produit">
+                                <p>5 500€</p>
+                            </a> 
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="images/vehicule2.jpg" class="card-img-top img-fluid" alt="Image illustrant le véhicule en vente">
+                        <div class="card-body">
+                            <p class="">BMW 3281, SPORT, LINE BODY KIT</p>
+                            <a class="btn" href="vente.html" role="button" title="Lien vers la page du produit">
+                                <p>8 000€</p>
+                            </a> 
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="images/vehicule2.jpg" class="card-img-top img-fluid" alt="Image illustrant le véhicule en vente">
+                        <div class="card-body">
+                            <p >FORD, EXPLORER 2015, 4WD</p>
+                            <a class="btn" href="vente.html" role="button" title="Lien vers la page du produit">
+                                <p id="ancienPrix">9 000€</p>
+                                <p>8 200€</p>
+                            </a> 
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+             <h2>Pourquoi nous choisir ?</h2>
+             <div class="row" >
+                <div class="col-3 contenu_services">
+                    <div>
+                        <img src="images/icon1.png" alt="icone illustration" width="50px">
+                    </div>
+                    <div>
+                        <h3>FINANCEMENT</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae esse nobis et voluptate maiores consectetur? Ut hic voluptatem rem consequuntur.</p>
+                    </div> 
+                </div>
+                <div class="col-3 contenu_services">
+                    <div>
+                        <img src="images/icon2.png" alt="icone illustration" width="50px">
+                    </div>
+                    <div>
+                        <h3>REACTIVITE DE L'EQUIPE TECHNIQUE</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti officiis alias velit dignissimos rerum non quibusdam eius laudantium atque voluptatum.</p>
+                    </div>
+                </div>
+                <div class="col-3 contenu_services">
+                    <div>
+                        <img src="images/icon3.png" alt="icone illustration" width="50px">
+                    </div>
+                    <div>
+                        <h3>A L'ECOUTE DE NOTRE CLIENTELE</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse recusandae sed in quas corporis, perspiciatis qui libero quo commodi nisi.</p>
+                    </div>
+                </div>
+                <div class="col-3 contenu_services">
+                    <div>
+                        <img src="images/icon4.png" alt="icone illustration" width="40px">
+                    </div>
+                    <div>
+                        <h3>SERVICE & MAINTENANCE</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, corrupti consequatur? At magni consequuntur dolore voluptatem? Nisi natus repellat porro!</p>
+                    </div>
+                </div>
+            </div>
+            <div id="services_contact">
+                <a class="btn btn-primary" href="contact.html" role="button" title="Lien vers la page CONTACT">CONTACTEZ-NOUS</a>
+            </div>
+        </section>
+        <section id="vente_loca">
+            <div id="contenu_vente_loca">
+                <div>
+                    <h2>CLUB AUTO <br><span>VENTE ET LOCATION</span></h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus eos hic sunt in laboriosam nisi, et placeat veniam repellendus deserunt eligendi, amet, voluptas facere sed quibusdam aliquam at sequi illum eveniet. Nihil sit illo officia magnam consequatur cumque nam placeat!</p>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <!-- ============================== FIN MAIN / DEBUT FOOTER ============================== -->
 
     <footer class="container-fluid">
         <div id="infos_footer" class="row">
