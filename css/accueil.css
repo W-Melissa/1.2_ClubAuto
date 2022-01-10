@@ -1,19 +1,28 @@
 /* =============== STYLE PAGE ACCUEIL  =============== */
 
-
-
 /* ===== Section main presentation ===== */
-#section_presentation{
-    background-image: url("/images/vehicule1.jpg");
-    height: 750px;
-    background-size: cover;
-    display: flex;
-    align-items: flex-end;
+
+@media screen and (min-width : 991px){
+    #section_presentation{
+        background-image: url("/images/vehicule1.jpg");
+        height: 750px;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+    }
+    #presentation{
+        height: 100px;
+    }
+}
+
+@media screen and (max-width : 991px) {
+    #presentation h1{
+        font-size: 5rem;
+    }
 }
 
 #presentation{
     background-color:#232628;
-    height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -50,7 +59,33 @@ ul{
     margin-right: 15px;
 }
 
-/* ===== Section #articles ===== */
+@media screen and (max-width: 992px){
+    #articles{
+        padding: 5rem 0px;
+    }
+    #articles h2{
+        font-size: 3rem;    
+    }
+    #articles p{
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+    #articles .bold{
+        font-size: 2.5rem;
+    }
+    .txt_article hr{
+        margin : 5rem 0;
+    }
+    #articles li{
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+    #articles svg{
+        height: 20px;
+        width: 20px;
+    }
+}
+/* ===== Section #articles2 ===== */
 #articles2{
     background-image: url('/images/vente-location.jpg');
     height: 500px;
@@ -61,7 +96,6 @@ ul{
 #txt_louer{
     background-color: #FAB637;
 }
-
 
 #txt_louer, #txt_vente{
     background-color: #FAB637;
@@ -90,6 +124,20 @@ ul{
     text-decoration: none;
 }
 
+@media screen and (max-width: 992px) {
+    #articles2{
+        height: auto;
+        font-size: 2rem;
+    }
+    #txt_louer, #txt_vente{
+        margin-bottom: 100px;
+        padding: 50px;
+        height: auto;
+    }
+    #articles2 h2{
+        font-size: 4rem;
+    }
+}
 /* ===== Section #vehicules_recents ===== */
 #vehicules_recents hr{
     color: #CC6119 ;
@@ -123,7 +171,6 @@ ul{
     align-items: center;
 }
 
-
 #vehicules_recents .btn{
     height: 50px;
     min-width: 100px;
@@ -146,6 +193,22 @@ ul{
     line-height: 0.7rem;
     text-decoration: line-through;
     margin: 0;
+}
+@media screen and (max-width: 992px) {
+    #vehicules_recents h2{
+        font-size: 5rem;
+    }
+    #vehicules_recents img{
+        margin-top: 50px;
+    }
+    #vehicules_recents p{
+        font-size: 2.5rem;
+    }
+    #vehicules_recents .btn{
+        height: 80px;
+        min-width: 300px;
+        border-radius: 0;
+    }
 }
 
 /* ===== Section #services ===== */
@@ -181,6 +244,19 @@ ul{
     width: 200px;
     line-height: 2rem;
     margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1200px){
+    #services h2{
+        font-size: 4rem;
+        margin: 100px;
+    }
+    #services img{
+        width: 150px;
+    }
+    #services, #services h3{
+        font-size: 2rem;
+    }
 }
 
 /* Section vente */

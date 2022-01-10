@@ -60,9 +60,8 @@ header .infos_orange{
 }
 
 #info_tel{
-    font-size: 1.2rem;
-    font-weight: 700;
-    line-height: 19.2px;
+    font-size: 3rem;
+    line-height: 2.5rem;
 }
 
 .infos_horaires{
@@ -78,9 +77,9 @@ header img{
     height: 2.4rem;    
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media screen and (min-width: 991px) and (max-width: 1200px) {
     #en_tete_infos h1{
-        font-size: 2.2rem;
+        font-size: 2.1rem;
     }
 }
 
@@ -121,10 +120,6 @@ header img{
     header img{
         height: 5rem;
     }
-    #info_tel{
-        font-size: 3rem;
-        line-height: 2.5rem;
-    }
     #en_tete_infos .infos_orange{
         font-size: 1.5rem;
         font-weight: bold;
@@ -153,6 +148,11 @@ header img{
 @media screen and (min-width: 991px){
     #menuNavMobile{
         display: none;
+    }
+    #info_tel{
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 19.2px;
     }
 }
 
