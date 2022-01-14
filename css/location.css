@@ -1,0 +1,50 @@
+/* Navigation */
+#nav_elargie{    
+    background:linear-gradient(rgba(0, 0, 0, 0.3), 
+          rgba(0, 0, 0, 0.3)),url("/images/vente-location.jpg");
+   /* background-image: url(/images/vente-location.jpg);
+    background-size: cover;*/
+    background-size: cover;
+    background-position: 50%;
+    height: 200px;
+}
+
+#nav_elargie nav{
+    background:linear-gradient(rgba(236, 239, 243, 0.9), 
+    rgba(236, 239, 243, 0.9));
+}
+
+#nav_elargie h2{
+    color: #FFFFFF;
+}
+
+/* Annonces */
+h3{
+    font-size: 1.4rem;
+}
+
+.annonce .btn{
+    background-color: #6C98E1;
+    border: none;
+    border-radius: 0;
+    font-weight: 700;
+    color: #FFFFFF;
+    height: 50px;
+    width: 140px;
+    font-size: 1.5rem;
+    margin-left: 50px;
+}
+
+.float_right{
+    float: right;
+}
+
+.annonce{
+    font-size: 1rem;
+}
+
+
+.annonce a{
+    color: #000000;
+    text-decoration: none;
+}

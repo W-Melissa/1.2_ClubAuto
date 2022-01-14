@@ -4,7 +4,7 @@
 
 @media screen and (min-width : 991px){
     #section_presentation{
-        background-image: url("/images/vehicule1.jpg");
+        background-image: url("../images/vehicule1.jpg");
         height: 750px;
         background-size: cover;
         display: flex;
@@ -87,7 +87,7 @@ ul{
 }
 /* ===== Section #articles2 ===== */
 #articles2{
-    background-image: url('/images/vente-location.jpg');
+    background-image: url('../images/vente-location.jpg');
     height: 500px;
     background-size: cover;
     padding: 100px;
@@ -267,7 +267,7 @@ ul{
 /* Section vente */
 
 #vente_loca{
-    background-image: url('/images/vehicule3.jpg'); 
+    background-image: url('../images/vehicule3.jpg'); 
     height: 500px;
     padding: 80px 100px;
 }

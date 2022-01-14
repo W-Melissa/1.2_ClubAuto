@@ -1,5 +1,5 @@
 main{
-    background-image: url(/images/vehicule3.jpg);
+    background-image: url(../images/vehicule3.jpg);
     background-size : cover;
     height: auto;
     padding: 100px;
@@ -18,8 +18,3 @@ main form{
     font-size: 0.7rem;
 }
 
-main .btn{
-    background-color: #6C98E1;
-    width: 120px;
-    font-size: 0.8rem;
-}
