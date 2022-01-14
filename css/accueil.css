@@ -210,6 +210,11 @@ ul{
         border-radius: 0;
     }
 }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #vehicules_recents {
+        font-size: 1rem;
+    }
+}
 
 /* ===== Section #services ===== */
 #services h2{

@@ -8,6 +8,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <!-- Intrégration feuille de style -->
 		<link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/contact.css" />
 		<title>Club Auto</title>
 		<meta name="Club Auto, le meilleur de l'automobile" content="Club Auto, le meilleur de l'automobile est  est une entreprise de vente et de location de véhicule" />
     </head>
@@ -15,122 +16,154 @@
     <body>
         <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de cette page">Accéder au contenu principal de la page</a></p>
         <p class="accessibility"><a href="#menuPrincipal" title="Accéder directement au contenu principal de cette page">Accéder directement au menu principal</a></p>
-    <!--  ============================== Début du header ============================== -->
-    <div id="menuNavMobile">
-        <nav id="navMobile" class="navbar navbar-expand-lg navigation">
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <svg id="btnNavMobile" width="50px" height="50px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
-            </button>
-        </nav>
-        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a href="index.html" class="nav-link nav-lien" title="Lien vers la page d'ACCUEIL" aria-current="page">ACCUEIL</a></li>
-                <li class="nav-item"><a href="vente.html" class="nav-link nav-lien" title="Lien vers la page VENTE">VENTE</a></li>
-                <li class="nav-item"><a href="location.html" class="nav-link nav-lien" title="Lien vers la page LOCATION">LOCATION</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link nav-lien" title="Lien vers la page CONTACT">CONTACT</a></li>
-            </ul>
-        </div>
-    </div>
-    <header class="container-fluid">
-        <div id="en_tete_infos" class="row">
-            <!-- Bloc 1 : Marque -->
-            <div class="col-xxl-3 col-lg-3 d-none d-lg-block">
-                <a href="index.html"><h1>CLUB AUTO</h1></a>
-            </div>
-            <!-- Bloc 2 : Adresse -->
-            <div class="col-xxl-3 col-lg-3 d-none d-lg-flex">
-                <img src="images/icone-adresse.png" alt="Logo adresse">
-                <p><span class="infos_orange">ADRESSE :</span> <br />
-                    AVENUE CHARLES DE GAULLE <br/>
-                    75000 PARIS
-                </p>
-            </div>
-            <!-- Bloc 3 : Téléphone -->
-
-            <div id="telephone" class="col-xxl-2 col-lg-3">
-                <img src="images/icon-telephone.png" alt="Logo téléphone">
-                <p><span class="infos_orange">TÉLÉPHONE :</span> <br />
-                    <span id="info_tel">01 23 45 67 89</span> 
-                </p>
-            </div>
-            <!-- Bloc 4 : Horaires -->
-            <div id="horaire" class="col-xxl-3 col-lg-3 d-none d-lg-flex">
-                <p>
-                    <span class="infos_orange">OUVERTURE : </span> <span class="infos_horaires">Du Lundi au Samedi</span> <br>
-                    <span class="infos_orange">HORAIRES : </span>
-                    <span class="infos_horaires">De 9h à 17h</span>
-                </p>
-            </div>
-            <!-- Bloc 5 : Réseaux sociaux -->
-            <div id="reseaux_sociaux" class="d-none d-xxl-block col-xxl-1">
-                <a href="#"><img src="images/logo-fb.png" alt="Logo cliquable Facebook" /></a>
-                <a href="#"><img src="images/logo-twitter.png" alt="Logo cliquable Twitter" /></a>
-            </div>
-        </div>
-        
-        <!-- Navigation -->
-        <nav class="navigation navDesktop navbar navbar-expand-lg navbar-light ">
-            <h1 class="accessibility" id="menuPrincipal">Menu principal</h1>
-            <div class="container-fluid">
-                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <!--  ============================== Début du header ============================== -->
+        <div id="menuNavMobile">
+            <nav id="navMobile" class="navbar navbar-expand-lg navigation">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg id="btnNavMobile" width="50px" height="50px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a href="index.html" class="nav-link nav-lien" title="Lien vers la page d'ACCUEIL" aria-current="page">ACCUEIL</a></li>
-                        <li class="nav-item"><a href="vente.html" class="nav-link nav-lien" title="Lien vers la page VENTE">VENTE</a></li>
-                        <li class="nav-item"><a href="location.html" class="nav-link nav-lien" title="Lien vers la page LOCATION">LOCATION</a></li>
-                        <li class="nav-item"><a href="contact.html" class="nav-link nav-lien" title="Lien vers la page CONTACT">CONTACT</a></li>
-                    </ul>
+            </nav>
+            <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="index.html" class="nav-link nav-lien" title="Lien vers la page d'ACCUEIL" aria-current="page">ACCUEIL</a></li>
+                    <li class="nav-item"><a href="vente.html" class="nav-link nav-lien" title="Lien vers la page VENTE">VENTE</a></li>
+                    <li class="nav-item"><a href="location.html" class="nav-link nav-lien" title="Lien vers la page LOCATION">LOCATION</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link nav-lien" title="Lien vers la page CONTACT">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <header class="container-fluid">
+            <div id="en_tete_infos" class="row">
+                <!-- Bloc 1 : Marque -->
+                <div class="col-xxl-3 col-lg-3 d-none d-lg-block">
+                    <a href="index.html"><h1>CLUB AUTO</h1></a>
+                </div>
+                <!-- Bloc 2 : Adresse -->
+                <div class="col-xxl-3 col-lg-3 d-none d-lg-flex">
+                    <img src="images/icone-adresse.png" alt="Logo adresse">
+                    <p><span class="infos_orange">ADRESSE :</span> <br />
+                        AVENUE CHARLES DE GAULLE <br/>
+                        75000 PARIS
+                    </p>
+                </div>
+                <!-- Bloc 3 : Téléphone -->
+                <div id="telephone" class="col-xxl-2 col-lg-3">
+                    <img src="images/icon-telephone.png" alt="Logo téléphone">
+                    <p><span class="infos_orange">TÉLÉPHONE :</span> <br />
+                        <span id="info_tel">01 23 45 67 89</span> 
+                    </p>
+                </div>
+                <!-- Bloc 4 : Horaires -->
+                <div id="horaire" class="col-xxl-3 col-lg-3 d-none d-lg-flex">
+                    <p>
+                        <span class="infos_orange">OUVERTURE : </span> <span class="infos_horaires">Du Lundi au Samedi</span> <br>
+                        <span class="infos_orange">HORAIRES : </span>
+                        <span class="infos_horaires">De 9h à 17h</span>
+                    </p>
+                </div>
+                <!-- Bloc 5 : Réseaux sociaux -->
+                <div id="reseaux_sociaux" class="d-none d-xxl-block col-xxl-1">
+                    <a href="#"><img src="images/logo-fb.png" alt="Logo cliquable Facebook" /></a>
+                    <a href="#"><img src="images/logo-twitter.png" alt="Logo cliquable Twitter" /></a>
                 </div>
             </div>
-        </nav>
-    </header>
-    <!-- ============================== Fin du header / Début du main ============================== -->
+            
+            <!-- Navigation -->
+            <nav class="navigation navDesktop navbar navbar-expand-lg navbar-light ">
+                <h1 class="accessibility" id="menuPrincipal">Menu principal</h1>
+                <div class="container-fluid">
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a href="index.html" class="nav-link nav-lien" title="Lien vers la page d'ACCUEIL" aria-current="page">ACCUEIL</a></li>
+                            <li class="nav-item"><a href="vente.html" class="nav-link nav-lien" title="Lien vers la page VENTE">VENTE</a></li>
+                            <li class="nav-item"><a href="location.html" class="nav-link nav-lien" title="Lien vers la page LOCATION">LOCATION</a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link nav-lien" title="Lien vers la page CONTACT">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================== Fin du header / Début du main ============================== -->
+        <main>
+            <div class="container-fluid">
+                <div class="contenu p-5">
+                    <h2 class="mb-lg-5 mb-1">CONTACTEZ NOUS</h2>
+                    <form class="row">
+                        <div class="col-8">
+                            <div class="row gx-5">
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <label for="fName" class="form-label">Prénom*</label>
+                                    <input type="text" class="form-control" id="fName" aria-describedby="Tapez votre prénom" placeholder="Entrez vote prénom" required autofocus>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <label for="lName" class="form-label">Nom*</label>
+                                    <input type="text" class="form-control" id="lName" aria-describedby="Tapez votre nom" placeholder="Entrez vote nom" required>
+                                </div>
+                            </div>
+                            <div class="row gx-5">
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <label for="email" class="form-label">Email*</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="Tapez votre mail" placeholder="Entrez une adresse mail valide" required>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <label for="tel" class="form-label">Téléphone</label>
+                                    <input type="tel" class="form-control" id="tel" aria-describedby="Tapez votre numéro de téléphone" placeholder="Phone number">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12 gx-lg-5">
+                            <label for="msg" class="form-label">Message</label>
+                            <textarea name="msg" id="msg" class="form-control mb-3" rows="5" aria-describedby="Ecrivez votre message" placeholder="Ecrivez votre message"></textarea>
+                            <button type="submit" class="btn btn-primary">ENVOYEZ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!-- ============================== Fin du main / Début du footer ============================== -->
+        <footer class="container-fluid">
+            <div id="infos_footer" class="row">
+                <!-- Description Club Auto -->
+                <div class="col-lg-3 col-md-12">
+                    <h2> <span>CLUB</span> AUTO</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit excepturi quidem officiis adipisci sapiente libero fuga neque accusamus, ducimus odio?</p>
+                </div>
+                <!-- Horaires -->
+                <div class="col-lg-3 col-md-12">
+                    <h2>HORAIRE D'OUVERTURE</h2>
+                    <p><span class="jour_ouverture">lundi - Samedi : </span>
+                        <span class="footer_horaire">09:00 - 17:00</span><br>
+                        <span class="jour_ouverture">Dimanche et jours fériés : </span>
+                        <span class="footer_horaire">Fermé</span></p>
+                </div>
+                <!-- Newsletter-->
+                <div id="newsletter" class="col-lg-3 col-md-12">
+                    <h2>NEWSLETTER</h2>
+                    
+                    <form method="post" action="traitement.php">
+                        <input type="email" name="mail" id="mail" placeholder="Entrez votre email"><img src="images/rss.png" alt="Bouton validation email">
+                    </form>
 
-   
-    <!-- ============================== Fin du main / Début du footer ============================== -->
-
-    <footer class="container-fluid">
-        <div id="infos_footer" class="row">
-            <!-- Description Club Auto -->
-            <div class="col-lg-3 col-md-12">
-                <h2> <span>CLUB</span> AUTO</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit excepturi quidem officiis adipisci sapiente libero fuga neque accusamus, ducimus odio?</p>
+                    <p>Inscrivez-vous pour recevoir les dernières offres</p>
+                </div>
+                <!-- Réseaux sociaux -->
+                <div id="footer_reseaux_sociaux" class="col-lg-3 col-md-12">
+                    <h2>RESEAUX SOCIAUX</h2>
+                    <a href="#"><img src="images/logo-facebook2.png" alt="Logo cliquable Facebook"></a>
+                    <a href="#"><img src="images/logo-twitter2.png" alt="Logo cliquable Twitter"></a>
+                    <a href="#"><img src="images/logo-instagram.png" alt="Logo cliquable Instagram"></a>
+                    <a href="#"><img src="images/logo-google.png" alt="Logo cliquable Google +"></a>
+                    <a href="#"><img src="images/logo-youtube.png" alt="Logo cliquable Youtube"></a>
+                </div>
             </div>
-            <!-- Horaires -->
-            <div class="col-lg-3 col-md-12">
-                <h2>HORAIRE D'OUVERTURE</h2>
-                <p><span class="jour_ouverture">lundi - Samedi : </span>
-                    <span class="footer_horaire">09:00 - 17:00</span><br>
-                    <span class="jour_ouverture">Dimanche et jours fériés : </span>
-                    <span class="footer_horaire">Fermé</span></p>
+            <hr>
+            <div id="copyright">
+                <p>Copyright © Club Auto - Tous droits réservés</p>
             </div>
-            <!-- Newsletter-->
-            <div id="newsletter" class="col-lg-3 col-md-12">
-                <h2>NEWSLETTER</h2>
-                
-                <form method="post" action="traitement.php">
-                    <input type="email" name="mail" id="mail" placeholder="Entrez votre email"><img src="images/rss.png" alt="Bouton validation email">
-                </form>
-
-                <p>Inscrivez-vous pour recevoir les dernières offres</p>
-            </div>
-            <!-- Réseaux sociaux -->
-            <div id="footer_reseaux_sociaux" class="col-lg-3 col-md-12">
-                <h2>RESEAUX SOCIAUX</h2>
-                <a href="#"><img src="images/logo-facebook2.png" alt="Logo cliquable Facebook"></a>
-                <a href="#"><img src="images/logo-twitter2.png" alt="Logo cliquable Twitter"></a>
-                <a href="#"><img src="images/logo-instagram.png" alt="Logo cliquable Instagram"></a>
-                <a href="#"><img src="images/logo-google.png" alt="Logo cliquable Google +"></a>
-                <a href="#"><img src="images/logo-youtube.png" alt="Logo cliquable Youtube"></a>
-            </div>
-        </div>
-        <hr>
-        <div id="copyright">
-            <p>Copyright © Club Auto - Tous droits réservés</p>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -246,11 +246,11 @@ form{
 
 /* Retire les logos superflux du footer*/
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-    #newsletter img[src="/images/rss.png"]{
+    #newsletter img[src="images/rss.png"]{
         display: none;
     }
 
-    #footer_reseaux_sociaux img[src="/images/logo-google.png"], #footer_reseaux_sociaux img[src="/images/logo-youtube.png"]{
+    #footer_reseaux_sociaux img[src="images/logo-google.png"], #footer_reseaux_sociaux img[src="images/logo-youtube.png"]{
         display: none;
     }
 }
