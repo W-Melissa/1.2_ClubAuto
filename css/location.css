@@ -2,11 +2,9 @@
 #nav_elargie{    
     background:linear-gradient(rgba(0, 0, 0, 0.3), 
           rgba(0, 0, 0, 0.3)),url("/images/vente-location.jpg");
-   /* background-image: url(/images/vente-location.jpg);
-    background-size: cover;*/
     background-size: cover;
     background-position: 50%;
-    height: 200px;
+    height: 250px;
 }
 
 #nav_elargie nav{
@@ -43,8 +41,56 @@ h3{
     font-size: 1rem;
 }
 
-
 .annonce a{
     color: #000000;
     text-decoration: none;
+}
+
+/* #filtre1*/
+
+.filtre1 button{
+    background-color: #ECEFF3;
+    border: none;
+    font-size: 0.8rem;
+}
+
+/* Navigation filtrée */ 
+.form-select{
+    background-color:#ECEFF3;
+    border-radius: 0;
+    border: none;
+    font-size: 1rem;
+    height: 50px;
+}
+
+label[for="prix"]{
+    font-weight: 700;
+}
+
+button[type="reset"]{
+    background-color: #6C98E1;
+    height: 50px;
+    width: 200px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+#filtre_nav_titre{
+    background-color: #232628;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+}
+
+#filtre_nav_titre h3{
+    font-size: 1rem;
+}
+
+@media screen and (min-width : 992px)  {
+    #filtre_nav{
+        position: relative;
+        bottom: 80px;
+    }
 }
