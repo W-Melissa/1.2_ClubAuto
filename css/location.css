@@ -1,7 +1,7 @@
 /* Navigation */
 #nav_elargie{    
     background:linear-gradient(rgba(0, 0, 0, 0.3), 
-          rgba(0, 0, 0, 0.3)),url("/images/vente-location.jpg");
+          rgba(0, 0, 0, 0.3)),url("../images/vente-location.jpg");
     background-size: cover;
     background-position: 50%;
     height: 250px;
@@ -16,6 +16,18 @@
     color: #FFFFFF;
 }
 
+@media screen and (max-width:992px) {
+    #nav_elargie{
+        height: 500px;
+        background-position: top;
+        display: flex;
+        align-items: center;
+    }
+    #nav_elargie h2{    
+        font-size: 6rem;
+        
+    }
+}
 /* Annonces */
 h3{
     font-size: 1.4rem;
@@ -44,6 +56,24 @@ h3{
 .annonce a{
     color: #000000;
     text-decoration: none;
+}
+
+@media screen and (max-width:992px) {
+    .annonce .btn{
+        height: 100px;
+        width: 250px;
+        font-size: 2.5rem;
+        margin-left: 50px;
+        position: relative;
+        bottom: 50px;
+    } 
+    .annonce{
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: 3rem;
+    }
 }
 
 /* #filtre1*/
@@ -78,9 +108,6 @@ button[type="reset"]{
 #filtre_nav_titre{
     background-color: #232628;
     color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     height: 100px;
 }
 
@@ -94,3 +121,17 @@ button[type="reset"]{
         bottom: 80px;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .form-select{
+        background-color:#ECEFF3;
+        font-size: 2rem;
+        height: 100px;
+    }
+    
+    label[for="prix"], button[type="reset"]{
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
+}
+

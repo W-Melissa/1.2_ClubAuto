@@ -92,8 +92,72 @@
     </header>
     <!-- ============================== Fin du header / Début du main ============================== -->
     <main class="row m-4">
-        <div class="col-8 mb-5">
-            <div class="filtre1 d-flex align-items-center">
+        <!--Navigation filtrée-->
+        <div class="col-12 col-lg-3 order-lg-2 mt-2" id="filtre_nav">
+            <div id="filtre_nav_titre" class="d-none d-lg-flex align-items-center justify-content-around">
+                <img src="images/icone-voiture.png" alt="Icone voiture" width="60px">
+                <h3>Rechercher</h3>
+            </div>
+            <div class="border p-4 shadow-lg">
+                <div class="input-group  mb-5 mb-lg-3">
+                    <select class="form-select text-secondary" id="v_type">
+                        <option selected disabled>Type</option>
+                        <option value="citadine">Citadine</option>
+                        <option value="familiale">Familiale</option>
+                        <option value="suv">SUV</option>
+                    </select>
+                </div>
+                <div class="input-group mb-5 mb-lg-3">
+                    <select class="form-select text-secondary" id="v_carburant">
+                        <option selected disabled>Carburant</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="essence">Essence</option>
+                        <option value="ethanol">Bio-éthanol</option>
+                    </select>
+                </div>
+                <div class="input-group mb-5 mb-lg-3">
+                    <select class="form-select text-secondary" id="v_marque">
+                        <option selected disabled>Marque</option>
+                        <option value="renault">Renault</option>
+                        <option value="peugeot">Peugeot</option>
+                        <option value="citroen">Citroën</option>
+                    </select>
+                </div>
+                <div class="input-group mb-5 mb-lg-3">
+                    <select class="form-select text-secondary" id="modele">
+                        <option selected disabled>Modèle</option>
+                        <option value="packoptions">Toutes options</option>
+                        <option value="options">Des options</option>
+                        <option value="sansoption">Sans options</option>
+                    </select>
+                </div>
+                <div class="input-group mb-5 mb-lg-3">
+                    <select class="form-select text-secondary" id="v_kilometrage">
+                        <option selected disabled>Kilométrage maximal</option>
+                        <option value="200000Plus">+ de 200.000 km</option>
+                        <option value="200000Moins">- de 200.000 km</option>
+                        <option value="100000Moins">- de 100.000 km</option>
+                    </select>
+                </div>
+                <div class="input-group mb-5 mb-lg-3">
+                    <select class="form-select text-secondary" id="v_anciennete">
+                        <option selected disabled>Ancienneté</option>
+                        <option value="20ansPlus">+ de 20 ans</option>
+                        <option value="entre10et20ans">Entre 10 et 20 ans</option>
+                        <option value="10ansMoins">-de 10 ans</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="prix" class="form-label">Prix</label>
+                    <input type="range" class="form-range mb-5" min="2000" max="80000" step="1000" id="prix">
+                    <button type="reset" class="btn w-100">REINITIALISER</button>
+                </div>
+            </div>
+        </div>
+        <!-- Fin navigation filtrée-->
+        <!-- Contenu principal -->
+        <div class="col-12 col-lg-8 order-lg-1 my-5 my-lg-3">
+            <div class="filtre1 d-flex align-items-center d-none d-lg-flex">
                 <p class="text-secondary my-0 me-2">ORDRE : </p>
                 <div class="dropdown">
                     <button class="btn text-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -108,116 +172,53 @@
             <!-- Annonces -->
             <div class="annonce row my-4 gx-0">
                 <hr class="mb-4">
-                <div class="col-4">
-                    <img src="/images/vehicule2.jpg" alt="photo du véhicule" class="img-fluid">
+                <div class="col-12 col-lg-4">
+                    <img src="images/vehicule2.jpg" alt="photo du véhicule" class="img-fluid">
                 </div>
-                <div class="col-8 ps-5">
+                <div class="col-12 col-lg-8 ps-lg-5">
                     <button type="button" class="btn btn-primary float_right">20€/jour</button>
-                    <h3>BMW 535i, Navi, Leather, ABS</h3>
+                    <h3 class="my-4 my-lg-0">BMW 535i, Navi, Leather, ABS</h3>
                     <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui nihil voluptas odio incidunt illo sapiente itaque laborum, atque, corrupti earum ad? Repellendus cum exercitationem amet, eos aspernatur at adipisci?</p>
                     <a href="#">>> En savoir plus &lt;&lt;</a>
                 </div>
             </div>
             <div class="annonce row my-5 gx-0">
                 <hr class="mb-4">
-                <div class="col-4">
-                    <img src="/images/vehicule2.jpg" alt="photo du véhicule" class="img-fluid">
+                <div class="col-12 col-lg-4">
+                    <img src="images/vehicule2.jpg" alt="photo du véhicule" class="img-fluid">
                 </div>
-                <div class="col-8 ps-5">
+                <div class="col-12 col-lg-8 ps-lg-5">
                     <button type="button" class="btn btn-primary float_right">20€/jour</button>
-                    <h3>BMW 535i, Navi, Leather, ABS</h3>
+                    <h3 class="my-4 my-lg-0">BMW 535i, Navi, Leather, ABS</h3>
                     <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui nihil voluptas odio incidunt illo sapiente itaque laborum, atque, corrupti earum ad? Repellendus cum exercitationem amet, eos aspernatur at adipisci?</p>
                     <a href="#">>> En savoir plus &lt;&lt;</a>
                 </div>
             </div>
             <div class="annonce row my-5 gx-0">
                 <hr class="mb-4">
-                <div class="col-4">
-                    <img src="/images/vehicule2.jpg" alt="photo du véhicule" class="img-fluid">
+                <div class="col-12 col-lg-4">
+                    <img src="images/vehicule2.jpg" alt="photo du véhicule" class="img-fluid">
                 </div>
-                <div class="col-8 ps-5">
+                <div class="col-12 col-lg-8 ps-lg-5">
                     <button type="button" class="btn btn-primary float_right">20€/jour</button>
-                    <h3>BMW 535i, Navi, Leather, ABS</h3>
+                    <h3 class="my-4 my-lg-0">BMW 535i, Navi, Leather, ABS</h3>
                     <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui nihil voluptas odio incidunt illo sapiente itaque laborum, atque, corrupti earum ad? Repellendus cum exercitationem amet, eos aspernatur at adipisci?</p>
                     <a href="#">>> En savoir plus &lt;&lt;</a>
                 </div>
             </div>
             <div class="annonce row my-5 gx-0">
                 <hr class="mb-4">
-                <div class="col-4">
-                    <img src="/images/vehicule2.jpg" alt="photo du véhicule" class="img-fluid">
+                <div class="col-12 col-lg-4">
+                    <img src="images/vehicule2.jpg" alt="photo du véhicule" class="img-fluid">
                 </div>
-                <div class="col-8 ps-5">
+                <div class="col-12 col-lg-8 ps-lg-5">
                     <button type="button" class="btn btn-primary float_right">20€/jour</button>
-                    <h3>BMW 535i, Navi, Leather, ABS</h3>
+                    <h3 class="my-4 my-lg-0">BMW 535i, Navi, Leather, ABS</h3>
                     <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui nihil voluptas odio incidunt illo sapiente itaque laborum, atque, corrupti earum ad? Repellendus cum exercitationem amet, eos aspernatur at adipisci?</p>
                     <a href="#">>> En savoir plus &lt;&lt;</a>
                 </div>
             </div> 
             <hr>   
-        </div>
-         <!--Navigation filtrée-->
-        <div class="col-3 mt-2" id="filtre_nav">
-            <div id="filtre_nav_titre">
-                <img src="images/icone-voiture.png" alt="Icone voiture" width="60px">
-                <h3>Rechercher</h3>
-            </div>
-            <div class="border p-4 shadow-lg">
-                <div class="input-group my-3">
-                    <select class="form-select text-secondary" id="v_type">
-                        <option selected disabled>Type</option>
-                        <option value="citadine">Citadine</option>
-                        <option value="familiale">Familiale</option>
-                        <option value="suv">SUV</option>
-                    </select>
-                </div>
-                <div class="input-group mb-3">
-                    <select class="form-select text-secondary" id="v_carburant">
-                        <option selected disabled>Carburant</option>
-                        <option value="diesel">Diesel</option>
-                        <option value="essence">Essence</option>
-                        <option value="ethanol">Bio-éthanol</option>
-                    </select>
-                </div>
-                <div class="input-group mb-3">
-                    <select class="form-select text-secondary" id="v_marque">
-                        <option selected disabled>Marque</option>
-                        <option value="renault">Renault</option>
-                        <option value="peugeot">Peugeot</option>
-                        <option value="citroen">Citroën</option>
-                    </select>
-                </div>
-                <div class="input-group mb-3">
-                    <select class="form-select text-secondary" id="modele">
-                        <option selected disabled>Modèle</option>
-                        <option value="packoptions">Toutes options</option>
-                        <option value="options">Des options</option>
-                        <option value="sansoption">Sans options</option>
-                    </select>
-                </div>
-                <div class="input-group mb-3">
-                    <select class="form-select text-secondary" id="v_kilometrage">
-                        <option selected disabled>Kilométrage maximal</option>
-                        <option value="200000Plus">+ de 200.000 km</option>
-                        <option value="200000Moins">- de 200.000 km</option>
-                        <option value="100000Moins">- de 100.000 km</option>
-                    </select>
-                </div>
-                <div class="input-group mb-3">
-                    <select class="form-select text-secondary" id="v_anciennete">
-                        <option selected disabled>Ancienneté</option>
-                        <option value="20ansPlus">+ de 20 ans</option>
-                        <option value="entre10et20ans">Entre 10 et 20 ans</option>
-                        <option value="10ansMoins">-de 10 ans</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="prix" class="form-label">Prix</label>
-                    <input type="range" class="form-range mb-5" min="2000" max="80000" step="1000" id="prix">
-                    <button type="reset" class="btn w-100">REINITIALISER</button>
-                </div>
-            </div>
-            <!-- Fin navigation filtrée-->
         </div>
     </main>
    
