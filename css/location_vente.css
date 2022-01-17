@@ -117,7 +117,7 @@ button[type="reset"]{
 }
 
 #filtre_nav_titre h3{
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 
 @media screen and (min-width : 992px)  {
@@ -139,4 +139,3 @@ button[type="reset"]{
         font-size: 1.8rem;
     }
 }
-

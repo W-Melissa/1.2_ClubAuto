@@ -103,6 +103,11 @@ nav{
     background-color: #CC6119;
 }
 
+.navigation{
+    padding: 0;
+    height: 60px;
+}
+
 /*en_tete_header version mobile*/
 @media screen and (max-width: 991px) {
     #en_tete_infos{
