@@ -41,7 +41,7 @@ h3{
     color: #FFFFFF;
     height: 50px;
     width: 140px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-left: 50px;
 }
 
@@ -61,11 +61,11 @@ h3{
 @media screen and (max-width:992px) {
     .annonce .btn{
         height: 100px;
-        width: 250px;
+        width: 270px;
         font-size: 2.5rem;
         margin-left: 50px;
         position: relative;
-        bottom: 50px;
+        bottom: 100px;
     } 
     .annonce{
         font-size: 2rem;
@@ -81,7 +81,12 @@ h3{
 .filtre1 button{
     background-color: #ECEFF3;
     border: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
+}
+@media screen and (max-width:992px) {
+    .filtre1 button{
+        font-size: 2rem;
+    }
 }
 
 /* Navigation filtrée */ 
